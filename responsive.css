@@ -1,0 +1,165 @@
+/* 600px */
+@media screen and (min-width: 600px){
+    
+    /* menu */
+    .menu-icon {
+        display: none;
+    }
+    
+    .header__inner {
+        justify-content: center;
+    }
+    
+    .header__logo {
+        margin-right: 10px;
+    }
+    
+    .nav {
+        position: relative;
+        transform: translate(0,0);
+        background-color: #fefefe;
+        border-bottom: 1px solid #aaa;
+    }
+    
+    .nav__list {
+        margin: 0;
+        max-width: 100%;
+    }
+    
+    .nav__item {
+        display: inline-block;
+        width: 24%;
+        padding: 16px;
+    }
+    
+    .nav a {
+        color: #222;
+        font-size: 1em;
+    }
+    
+    .news__title {
+        border-bottom: 0px;
+    }
+    
+    /*content*/
+    
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .top-news {
+        width: 100%;
+    }
+    
+    .weather,
+    .scores {
+        width: 48%;
+    }
+    
+    .scores {
+        padding: 0;
+        border: 1px solid #eee;
+        border-radius: 5px;
+        margin: 5px;
+        background: #fffffe;
+    }
+    
+    .recent-news {
+        width: 100%;
+    }
+    
+    .news_grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .snippet {
+        margin: 5px 0;
+        width: 22%;
+        border: 1px solid #eee;
+        padding: 5px;
+        border-radius: 5px;
+        background: #fffffe;
+    }
+    
+    .important_news {
+        width: 47%;
+    }
+    
+    .snippet__thumbnail {
+        margin: 0;
+        width: 100%;
+        float: none;
+    }
+    
+    .top-news,
+    .weather{
+        width: 50%;
+    }
+    .scores {
+        order: 9;
+        width: 100%;
+        margin: 0 5%;
+    }
+    .recent-news {
+        order: 10;
+    }
+    
+    .scores__location {
+        display: table-cell;
+    }
+}
+
+/*Entre 620px y 720px*/
+
+@media screen and (min-width: 620px) and (max-width: 720px){
+    .recent-news p {
+        font-size: 0.85em;
+    }
+}
+
+/*890px*/
+
+@media screen and (min-width: 890px){
+    .content {
+        align-items: center;
+    }
+    
+    .hero {
+        width: 70%;
+    }
+    
+    .top-news {
+        width: 30%;
+    }
+        
+    .weather{
+        width: 38%;
+    }
+    
+    
+    .scores {
+        padding: 0;
+        width: 60%;
+        order: 3;
+        margin: 0;
+        
+    }
+}
+
+/*920*/
+
+@media screen and (min-width: 920px){
+    main, .nav__list{
+        width: 920px;
+        margin: 0 auto;
+    }
+    
+    .nav {
+        border-bottom: 0px;
+    }
+}
